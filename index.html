@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/main.css" />
     <title>Guess the number</title>
-    <link rel="shortcut icon" href="./img/dice-solid-full.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/shield-halved-solid-full.svg" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
+
   <body onload="init()">
     <main>
       <div id="welcomeScreen">
@@ -17,25 +28,25 @@
       <div id="gameArea">
         <section>
           <h2 id="textOutput">Your Guess</h2>
-          <input type="number" id="inputBox" min="1" max="100" onchange="compareNumbers()"/>
+          <input type="number" placeholder="0" id="inputBox" min="1" max="100" onchange="compareNumbers()"/>
         </section>
         <section class="stats">
           <div class="info">
             <p>Number of attempts:</p>
-            <span id="attempts">0</span>
+            <p id="attempts">0</p>
           </div>
           <div class="info">
             <p>Your guesses:</p>
-            <span id="guesses">0</span>
+            <p id="guesses">0</p>
           </div>
         </section>
-        <button id="newGameButton" onclick="newGame()" >NEW GAME</button>
+        <button id="newGameButton" onclick="newGame()" ><b>NEW GAME</b></button>
       </div>
     </main>
     <script src="./script/index.js"></script>
     <footer>
         <span>
-            &copy; Lucas Metzker, 2025 - Todos os direitos reservados.
+            &copy; Copyright - Lucas Metzker, 2025
         </span>
     </footer>
   </body>
