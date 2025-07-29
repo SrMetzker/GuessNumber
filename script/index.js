@@ -23,6 +23,8 @@ function compareNumbers() {
   if (userNumber > 100) {
     // Retorna a mensagem do perdedor
     document.getElementById("textOutput").innerHTML = "You Lose! The maximum number is 100!"
+    document.getElementById("textOutput").style.color = "red"
+    document.getElementById("welcomeScreen").innerHTML = ""
     // Desabilita o campo de digitação
     document.getElementById("inputBox").setAttribute("Readonly", "Readonly")
     // Finaliza a execução
@@ -51,7 +53,9 @@ function compareNumbers() {
       // Desabilita o campo de digitação
       document.getElementById("inputBox").setAttribute("Readonly", "Readonly")
       // Mensagem
-      document.getElementById("textOutput").innerHTML = "You Win!"
+      document.getElementById("textOutput").innerHTML = "CONGRATULATIONS!<br>You Win 🎉"
+      document.getElementById("textOutput").style.color = "green"
+      document.getElementById("welcomeScreen").innerHTML = ""
     }
   }
   // Caso o número de tentativas já tenha sido atingido, o jogo é encerrado
@@ -60,6 +64,8 @@ function compareNumbers() {
     document.getElementById("inputBox").setAttribute("Readonly", "Readonly")
     // Mensagem
     document.getElementById("textOutput").innerHTML = "You Lose! The computer number was " + computerNumber
+    document.getElementById("textOutput").style.color = "red"
+    document.getElementById("welcomeScreen").innerHTML = ""
     // Finaliza a execução
     return
   }

@@ -1,0 +1,26 @@
+@media (max-width: 685px) {
+  body, main {
+    padding: 2rem;
+  }
+
+  main h2 {
+    font-size: 2em;
+    margin: auto;
+  }
+
+  main p, button {
+    font-size: 1.2em;
+  }
+
+  #newGameButton {
+    border-radius: 10px;
+  }
+
+  main input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0.7rem 0;
+    width: 7rem;
+    font-size: 1.3em;
+  }
+}
